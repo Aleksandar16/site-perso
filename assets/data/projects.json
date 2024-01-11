@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "ConcoursPhoto.com",
+    "slug": "concours-photo",
+    "url":  "/project/concours-photo",
+    "type": "scolaire",
+    "shortDescription": "Réalisation d'un site permettant de gérer et participer à des concours photo.",
+    "figma": "https://www.figma.com/file/T58mL2GO2BkGQMrY0QzRKw/ConcoursPhoto.com-(Copy)?type=design&node-id=0-1&mode=design&t=jTrb1zJSpPgrOT3w-0",
+    "technologies": [
+      "symfony", "react", "api-platform", "tailwind", "vscode", "phpstorm", "git", "github"
+    ]
+  },
+  {"id": 2, "name": "Item 2", "slug": "item-2", "url":  "/project/item-2"},
+  {"id": 3, "name": "Item 3", "slug": "item-3", "url":  "/project/item-3"},
+  {"id": 4, "name": "Item 4", "slug": "item-4", "url":  "/project/item-4"},
+  {"id": 5, "name": "Item 5", "slug": "item-5", "url":  "/project/item-5"},
+  {"id": 6, "name": "Item 6", "slug": "item-6", "url":  "/project/item-6"},
+  {"id": 7, "name": "Item 7", "slug": "item-7", "url":  "/project/item-7"},
+  {"id": 8, "name": "Item 8", "slug": "item-8", "url":  "/project/item-8"}
+]

@@ -1,0 +1,23 @@
+[
+  {"id": 1, "name": "Symfony", "type":  "backend", "image":  "images/technologies/symfony.png", "slug":  "symfony", "link":  "https://symfony.com/"},
+  {"id": 2, "name": "React JS", "type":  "frontend", "image":  "images/technologies/react.png", "slug":  "react", "link":  "https://fr.legacy.reactjs.org/"},
+  {"id": 3, "name": "Github", "type":  "tools", "image":  "images/technologies/github.png", "slug":  "github", "link":  "https://github.com/"},
+  {"id": 4, "name": "Tailwind", "type":  "frontend", "image":  "images/technologies/tailwind.png", "slug":  "tailwind", "link":  "https://tailwindcss.com/"},
+  {"id": 5, "name": "HTML", "type":  "frontend", "image":  "images/technologies/html.png", "slug":  "html", "link":  "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"},
+  {"id": 6, "name": "CSS", "type":  "frontend", "image":  "images/technologies/css.png", "slug":  "css", "link":  "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"},
+  {"id": 7, "name": "Visual Studio Code", "type":  "tools", "image":  "images/technologies/vscode.png", "slug":  "vscode", "link":  "https://code.visualstudio.com/"},
+  {"id": 8, "name": "PhpStorm", "type":  "tools", "image":  "images/technologies/phpstorm.png", "slug":  "phpstorm", "link":  "https://www.jetbrains.com/fr-fr/phpstorm/"},
+  {"id": 9, "name": "PHP", "type":  "backend", "image":  "images/technologies/php.png", "slug":  "php", "link":  "https://www.php.net/"},
+  {"id": 10, "name": "Xampp", "type":  "tools", "image":  "images/technologies/xampp.png", "slug":  "xampp", "link":  "https://www.apachefriends.org/fr/index.html"},
+  {"id": 11, "name": "Javascript", "type":  "frontend", "image":  "images/technologies/javascript.png", "slug":  "javascript", "link":  "https://fr.wikipedia.org/wiki/JavaScript"},
+  {"id": 12, "name": "Material Tailwind", "type":  "frontend", "image":  "images/technologies/material-tailwind.webp", "slug":  "material-tailwind", "link":  "https://www.material-tailwind.com/"},
+  {"id": 13, "name": "C#", "type":  "backend", "image":  "images/technologies/c-sharp.png", "slug":  "c#", "link":  "https://fr.wikipedia.org/wiki/C_Sharp"},
+  {"id": 14, "name": "Wordpress", "type":  "backend", "image":  "images/technologies/wordpress.webp", "slug":  "wordpress", "link":  "https://wordpress.org/"},
+  {"id": 15, "name": "Bootstrap", "type":  "frontend", "image":  "images/technologies/bootstrap.webp", "slug":  "bootstrap", "link":  "https://getbootstrap.com/"},
+  {"id": 16, "name": "Git", "type":  "tools", "image":  "images/technologies/git.png", "slug":  "git", "link":  "https://git-scm.com/"},
+  {"id": 17, "name": "Figma", "type":  "tools", "image":  "images/technologies/figma.png", "slug":  "figma", "link":  "https://www.figma.com/fr/"},
+  {"id": 18, "name": "SQL", "type":  "backend", "image":  "images/technologies/sql.png", "slug":  "sql", "link":  "https://sql.sh/"},
+  {"id": 19, "name": "JQuery", "type":  "frontend", "image":  "images/technologies/jquery.png", "slug":  "jquery", "link":  "https://jquery.com/"},
+  {"id": 20, "name": "Symfony UX", "type":  "frontend", "image":  "images/technologies/symfony-ux.svg", "slug":  "symfony-ux", "link":  "https://ux.symfony.com/"},
+  {"id": 21, "name": "API Platform", "type":  "backend", "image":  "images/technologies/api-platform.png", "slug":  "api-platform", "link":  "api-platform"}
+]

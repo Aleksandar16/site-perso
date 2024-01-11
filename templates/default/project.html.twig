@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello test!{% endblock %}
+
+{% block body %}
+    <div {{ stimulus_controller('symfony/ux-swup/swup') }} data-turbo="false">
+        <div id="swup">
+            {% include ('/_commons/_header.html.twig') %}
+            <div class="max-w-screen-2xl">
+                {{ render_chart(chart) }}
+            </div>
+            <div>
+                <p>{{ obj.name }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

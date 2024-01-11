@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+{% block body %}
+    <main {{ stimulus_controller('symfony/ux-swup/swup', {
+        linkSelector: 'a:not(.no-swup)',
+    }) }} data-turbo="false" id="swup">
+        {% include ('/_commons/_header.html.twig') %}
+        <section class="min-h-screen mx-[15%] z-1 flex items-center">
+            <div>
+                <div {{ react_component('Text', {name: 'Aleksandar Milenkovic', delay: 500,
+                    class: 'text-amber-600 text-4xl mb-4 lg:text-6xl lg:mb-10'}) }}></div>
+                <div {{ react_component('Text', {name: 'Développeur Full-Stack Junior', delay: 900,
+                    class: 'text-white text-3xl lg:text-4xl'}) }}></div>
+            </div>
+        </section>
+        <section class="bg-gray-800 min-h-screen py-16" id="project">
+            <div class="flex flex-col items-center mb-24">
+                <p class="text-3xl lg:text-4xl text-amber-600">Mes projets</p>
+            </div>
+            <div>
+                <div {{ react_component('Projects', {projects: projects|json_encode, technologies: technologies|json_encode}) }}></div>
+            </div>
+        </section>
+        <section class="min-h-screen bg-gray-900 py-16" id="technology">
+            <div class="flex flex-col items-center mb-6">
+                <p class="text-3xl lg:text-4xl text-amber-600">Technologies</p>
+            </div>
+            <div>
+                <div {{ react_component('Technologies', {technologies: technologies|json_encode}) }}></div>
+            </div>
+        </section>
+        <section class="min-h-screen bg-gray-800 py-16" id="course">
+            <div class="flex flex-col items-center mb-6">
+                <p class="text-3xl lg:text-4xl text-amber-600">Mon Parcours</p>
+            </div>
+            <div>
+                <div {{ react_component('Course') }}></div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
