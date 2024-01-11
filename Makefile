@@ -1,4 +1,4 @@
-COMPOSE=docker-compose -f docker-compose.yml -f docker-compose-dev.yml
+COMPOSE=docker-compose.yml
 COMPOSE_MAC=$(COMPOSE) -f docker-compose-sync.yml
 EXEC=$(COMPOSE) exec app
 CONSOLE=$(EXEC) bin/console
@@ -6,17 +6,13 @@ ENVIRONMENT=$(shell bash ./scripts/get-env.sh)
 SHELL := /bin/bash
 MUTAGEN_NAME=$(shell bash ./scripts/get-mutagen-name.sh)
 
-.PHONY: start up perm db cc ssh vendor assets assets-watch stop rm
-.PHONY: maintenance-on maintenance-off
+.PHONY: start up cc vendor stop rm
 
-.PHONY: start up cc vendor assets assets-watch stop rm
-
-start: up vendor assets cc
+start: up vendor cc
 
 up:
-	docker kill $$(docker ps -q) || true
-	$(COMPOSE) build --force-rm
-	$(COMPOSE) up -d
+	docker ps -q
+	cd docker && docker build .
 
 stop:
 	$(COMPOSE) stop
@@ -27,23 +23,10 @@ rm:
 	$(COMPOSE) rm
 
 vendor:
-	$(EXEC) composer install -n
-	$(EXEC) yarn install --pure-lockfile
-
-run:
-	$(EXEC) $(c)
-
-sf:
-	$(EXEC) bin/console $(c)
-
-assets:
-	$(EXEC) bin/console assets:install
-	$(EXEC) yarn run encore dev
-
-assets-watch:
-	$(EXEC) bin/console assets:install
-	$(EXEC) yarn watch
+	composer install -n
+	npm install
+	npm run build
+	symfony serve -d
 
 cc:
-	$(EXEC) bin/console c:cl --no-warmup
-	$(EXEC) bin/console c:warmup
+	symfony console cache:clear
