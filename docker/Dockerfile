@@ -9,4 +9,4 @@ RUN docker-php-ext-install pdo_mysql
 COPY . /var/www/html/
 
 # Installez Composer
-COPY --from=composer /usr/bin/composer /usr/bin/composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
