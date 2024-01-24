@@ -1,0 +1,10 @@
+services:
+  server:
+    build:
+      context: .
+    ports:
+      - 9000:80
+  app:
+    image: sha256:d40ce922118099fdf72ebedac26d257616fb344ec9a15257544d3dd85b43aa4a
+    ports:
+      - "8080:80"
