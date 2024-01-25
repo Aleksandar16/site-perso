@@ -11,7 +11,17 @@
       "symfony", "react", "api-platform", "tailwind", "vscode", "phpstorm", "git", "github"
     ]
   },
-  {"id": 2, "name": "Item 2", "slug": "item-2", "url":  "/project/item-2"},
+  {
+    "id": 2,
+    "name": "Portfolio Symfony",
+    "slug": "portfolio-symfony",
+    "url":  "/project/portfolio-symfony",
+    "type": "personel",
+    "shortDescription": "Création d'un site vitrine montrant mes projets, mes compétences et mon parcours.",
+    "technologies": [
+      "symfony", "react", "docker", "tailwind", "symfony-ux", "phpstorm", "git", "github", "php", "material-tailwind"
+    ]
+  },
   {"id": 3, "name": "Item 3", "slug": "item-3", "url":  "/project/item-3"},
   {"id": 4, "name": "Item 4", "slug": "item-4", "url":  "/project/item-4"},
   {"id": 5, "name": "Item 5", "slug": "item-5", "url":  "/project/item-5"},

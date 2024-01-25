@@ -10,14 +10,7 @@ RUN curl -sSk https://getcomposer.org/installer | php -- --disable-tls && \
 
 RUN apt update && apt install -yqq nodejs npm
 
-COPY --chown=www-data:www-data . /var/www/
-
 COPY ./docker/apache.conf /etc/apache2/sites-available/000-default.conf
-
-RUN cd /var/www && \
-    composer install && \
-    npm install --force && \
-    npm run build
 
 USER www-data
 

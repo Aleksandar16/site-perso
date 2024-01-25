@@ -2,9 +2,13 @@ services:
   server:
     build:
       context: .
+    volumes:
+      - .:/var/www:delegated
     ports:
       - 9000:80
   app:
     image: docker.io/library/site-perso-docker
+    volumes:
+      - .:/var/www:delegated
     ports:
       - "8080:80"
