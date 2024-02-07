@@ -63,7 +63,7 @@ export function NavbarMenu() {
                 <div className={`h-full flex items-center justify-between transition duration-500 ease-in-out
                  ${animate ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                     <a href="/" className="no-swup mr-4 cursor-pointer py-1.5 font-medium text-white">
-                        Material Tailwind
+                        <img className={`w-12 h-12`} src={'/images/logo.png'}  alt={'Logo du site'}/>
                     </a>
                     <div className="flex items-center gap-4">
                         <div className="hidden lg:block">{navList}</div>

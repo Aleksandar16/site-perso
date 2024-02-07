@@ -19,5 +19,6 @@
   {"id": 18, "name": "SQL", "type":  "backend", "image":  "images/technologies/sql.png", "slug":  "sql", "link":  "https://sql.sh/"},
   {"id": 19, "name": "JQuery", "type":  "frontend", "image":  "images/technologies/jquery.png", "slug":  "jquery", "link":  "https://jquery.com/"},
   {"id": 20, "name": "Symfony UX", "type":  "frontend", "image":  "images/technologies/symfony-ux.svg", "slug":  "symfony-ux", "link":  "https://ux.symfony.com/"},
-  {"id": 21, "name": "API Platform", "type":  "backend", "image":  "images/technologies/api-platform.png", "slug":  "api-platform", "link":  "api-platform"}
+  {"id": 21, "name": "API Platform", "type":  "backend", "image":  "images/technologies/api-platform.png", "slug":  "api-platform", "link":  "https://api-platform.com/"},
+  {"id": 21, "name": "Docker", "type":  "tools", "image":  "images/technologies/docker.png", "slug":  "docker", "link":  "https://www.docker.com/"}
 ]

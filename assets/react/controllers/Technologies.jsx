@@ -30,7 +30,7 @@ const Technologies = (props) => {
     ];
 
     return (
-        <Tabs value="backend" className={`max-h-[80%] p-12 lg:p-24`}>
+        <Tabs value="backend" className={`max-h-[80%] p-6 lg:p-24`}>
             <TabsHeader className={`bg-gray-900`}>
                 {tabs.map(tab => (
                     <Tab key={tab.value} value={tab.value} className={`bg-gray-900 text-amber-700 text-xl min-h-[70px]`}>
@@ -47,7 +47,7 @@ const Technologies = (props) => {
             >
                 {tabs.map(tab => (
                     <TabPanel key={tab.value} value={tab.value} className="py-0">
-                        <div className={`grid grid-cols-2 gap-8 lg:grid-cols-5 place-items-center p-3`}>
+                        <div className={`grid grid-cols-2 p-1 gap-2 lg:gap-8 lg:grid-cols-5 place-items-center lg:p-3`}>
                             {tab.desc.map((tech, index) => (
                                 <div key={index} className={`m-2 p-2`}>
                                     <Tooltip content={tech.name} placement="bottom">

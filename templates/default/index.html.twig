@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DefaultController!{% endblock %}
+{% block title %}Aleksandar Milenkovic{% endblock %}
 
 {% block body %}
     <main {{ stimulus_controller('symfony/ux-swup/swup', {
         linkSelector: 'a:not(.no-swup)',
     }) }} data-turbo="false" id="swup">
         {% include ('/_commons/_header.html.twig') %}
-        <section class="min-h-screen mx-[15%] z-1 flex items-center">
+        <section class="min-h-screen mx-[5%] lg:mx-[15%] z-1 flex items-center">
             <div>
                 <div {{ react_component('Text', {name: 'Aleksandar Milenkovic', delay: 500,
                     class: 'text-amber-600 text-4xl mb-4 lg:text-6xl lg:mb-10'}) }}></div>
@@ -28,7 +28,7 @@
                 <p class="text-3xl lg:text-4xl text-amber-600">Technologies</p>
             </div>
             <div>
-                <div {{ react_component('Technologies', {technologies: technologies|json_encode}) }}></div>
+                <div {{ react_component('Technologies', {technologies: technologies|json_encode}) }} class="p-6 lg:p-24"></div>
             </div>
         </section>
         <section class="min-h-screen bg-gray-800 py-16" id="course">

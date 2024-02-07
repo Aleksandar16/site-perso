@@ -42,7 +42,7 @@ const Projects = ({projects, technologies}) => {
     return (
         <div className={'grid gap-x-16 mx-6 grid-cols-1 md:grid-cols-2 lg:mx-16 2xl:grid-cols-3 place-items-center gap-y-16'}>
             {data.map((item) => (
-                <Card key={item.id} data-id={item.id} className={`lazy-card w-full max-w-[48rem] flex-row transition-all ease-in duration-500 transform
+                <Card key={item.id} data-id={item.id} className={`lazy-card w-full max-w-[48rem] h-96 flex-row transition-all ease-in duration-500 transform
                  ${isLoaded[item.id] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                     <ProjectCard item={item} technologies={technos} />
                 </Card>
